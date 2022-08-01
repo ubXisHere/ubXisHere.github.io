@@ -1,7 +1,4 @@
-destination: "E://site"
-disable_disk_cache: true
 port: 1234
-
 title: ubX's Site
 email: ubX@outlook.in
 description: >-
