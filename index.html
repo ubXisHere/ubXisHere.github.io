@@ -1,0 +1,22 @@
+---
+layout: home
+title: HomePage
+---
+
+<p>Hi, welcome to my freaking site...</p>
+
+<h2>Recent Blogs:</h2>
+{% assign posts = site.posts | sort: 'date' %}
+<div class="grid x2">
+    {% for post in posts %}
+    <a class="clear grid-item" href="{{post.url | prepend: site.baseurl}}">
+        <h3>{{post.title}}</h3>
+        <!-- <p>{{post}}</p> -->
+    </a>
+
+    {% endfor %}    
+</div>
+
+
+<h2>Pages:</h2>
+about huh

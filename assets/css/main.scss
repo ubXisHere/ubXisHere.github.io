@@ -1,0 +1,259 @@
+---
+---
+@import "font.css";
+
+::-webkit-scrollbar{
+    width: 0.4vw;
+    height: 0.4vh
+}
+::-webkit-scrollbar-track{
+    background-color: yellow;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+
+
+*{
+    transition: 0.5s;
+}
+
+html{
+    // background-color: white;
+    // padding: 40px 20px 0px 20px;
+}
+
+body{
+    // background-color: #999;
+    font-family: Sen;
+    margin: 0px 0px;
+    min-height: 1vw;
+    // height: 200px;
+    padding: 50px 0px 0px;
+    font-size: 15px;
+    // border-radius: 40px 40px 5px 5px
+}
+
+header{
+    display: grid;
+    // display: none;
+    grid-template-columns: auto auto auto;
+    // border-bottom: solid 2px;
+
+    .item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item:nth-child(2){
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        .child{
+            background-color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 15px;
+            font-family: Megrim;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            // margin: 0px 10px;
+        }
+        .child:hover{
+            // transform: translateY(-4px);
+            box-shadow: #0006 0px 0px 20px;
+        }
+    }
+
+    #site-title{
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Sen;
+        color: whitesmoke;
+        // text-decoration: wavy underline yellow;
+        span{
+            border-radius: 10px;
+            background-color: black;
+            padding: 10px 25px;
+        }
+        span:hover{
+            background-color: #0008;
+            color: yellow;
+        }
+    }
+
+}
+
+#page-title{
+    margin: 80px 40px;
+    width: fit-content;
+}
+
+#main{
+    // background-color: white;
+    // margin-top: 30px;
+    padding: 0px 20px;
+    
+
+
+    a{
+        color: #204;
+        border-bottom-width: 2px;
+        border-bottom-style: dotted;
+    }
+    a:hover{
+        border-color: blue;
+    }
+    .pagination a, .pagination span {
+        padding: 7px 18px;
+        border: 1px solid #eee;
+        margin-left: -2px;
+        margin-right: -2px;
+        background-color: #ffffff;
+        display: inline-block;
+        // border-bottom-style: solid;
+    }
+    
+    .pagination a {    
+        border-bottom-style: solid;
+        &:hover {
+            background-color: #f1f1f1;
+            border-color: blue;
+            color: #333;
+        }
+    }
+    
+    .pagination {
+        text-align: center;
+        // padding: 0px 20px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+}
+
+
+
+footer{
+    padding: 20px;
+    // background-color: #204;
+    // margin: 0px -20px;
+}
+
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+select.menu-list{
+    outline: none;
+    border: none;
+    background-color: inherit;
+
+    option:nth-child(1){
+        display: none;
+    }
+
+    option{
+        display: block;
+        margin-bottom: 10px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: transparent;
+        
+    }
+    
+}
+
+p{
+    // display: ;
+    align-items: center;
+    // justify-content: right;
+}
+
+img{
+    display: inline;
+    max-width: 600px;
+    // float: man;
+    object-fit: contain;
+    object-position: center;
+
+}
+
+.pagination a, .pagination span {
+    padding: 7px 18px;
+    border: 1px solid #eee;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: #ffffff;
+    display: inline-block;
+    // border-bottom-style: solid;
+}
+
+.pagination a {    
+    border-bottom-style: solid;
+    &:hover {
+        background-color: #f1f1f1;
+        color: #333;
+    }
+}
+
+.pagination {
+    text-align: center;
+    // padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.spoil{
+    display: none;
+}
+
+.spoiler{
+    filter: brightness(0);
+    color: black;
+    background-color: black;
+    user-select: none;
+    // border-radius: 5px;
+    // filter: blur(20px);
+}
+.spoil:checked + .spoiler{
+    filter: brightness(1);
+    color: inherit;
+    background-color: inherit;
+    user-select: inherit;
+}
+
+
+// Properties
+.clear{
+    text-decoration: none;
+    color: black;
+    border-bottom: none;
+}
+
+
+
+// Grids
+.grid{
+    display: grid;
+    // gap: 10px;
+}
+
+.grid-item{
+    display: block;
+    padding: 10px;
+    box-shadow: #3336 0px 0px 10px;
+}
+
+.x2{
+    gap: 20px;
+    color: red;
+    grid-template-columns: 1fr 1fr;
+}

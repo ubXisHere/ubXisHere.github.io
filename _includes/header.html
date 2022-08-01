@@ -1,0 +1,13 @@
+<header>
+    <div class="item" id="site-title"><a href="{{site.baseurl}}"><span>{{site.title}}</span></a></div>
+    <div class="item">{% for link in site.data.links %} <a href="{{link[1]}}" class="child">{{link[0]}}</a> {% endfor %}<select class="menu-list child"  onChange="window.location.href=this.value">
+        <option value="">Menu</option>
+        <option value="http://www.google.com">A</option>
+        <option value="http://www.aol.com">B</option>
+    </select></div>
+    <div class="item"><select class="menu-list"  onChange="window.location.href=this.value">
+        <option value="">Menu</option>
+        <option value="http://www.google.com">A</option>
+        <option value="http://www.aol.com">B</option>
+    </select></div>
+</header>

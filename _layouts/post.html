@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="post-grid">
+    <div class="post-grid-item" id="page-content">
+        <h1 class="post-title">{{page.title}}</h1>
+        {% if page.cover %}
+        {% assign cover = page.cover | replace: ' | ', '|' | replace: ' |', '|' | replace: '| ', '|' | split: '|' %}
+            <img src="{% if cover[0] == "l" %}{{cover[1] | prepend: site.baseurl}}{% else %}{{cover[1]}}{% endif %}
+            " alt="{{page.title}}">
+        {% endif %}
+        {% if page.beforetoc %}{{page.beforetoc}}{% endif %}
+        {{content}}
+    </div>
+    <aside class="post-grid-item" id="sidebar">
+
+    </aside>
+</div>
