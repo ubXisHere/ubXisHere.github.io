@@ -7,7 +7,7 @@ email: ubX@outlook.in
 description: >-
   Akshay is a human, lol
 
-baseurl: ""
+baseurl: "/"
 
 default:
   - scope:
