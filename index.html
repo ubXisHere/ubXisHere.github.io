@@ -9,11 +9,10 @@ title: HomePage
 {% assign posts = site.posts | sort: 'date' %}
 <div class="grid x2">
     {% for post in posts %}
-    <a class="clear grid-item" href="{{site.baseurl}}/{{post.url}}">
+    <a class="clear grid-item" href="{{site.baseurl}}{{post.url}}">
         <h3>{{post.title}}</h3>
         <!-- <p>{{post}}</p> -->
     </a>
-    {{site.baseurl}}
     {% endfor %}    
 </div>
 

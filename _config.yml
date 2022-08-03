@@ -6,6 +6,10 @@ description: >-
 
 baseurl: ""
 
+collections:
+  posts:
+    permalink: /:collection/:title
+
 default:
   - scope:
       path: ""
@@ -20,6 +24,7 @@ plugins:
 plugins: [jekyll-paginate]
 paginate: 11
 paginate_path: "/posts/page-:num/"
+
 
 kramdown:
   auto_ids: true

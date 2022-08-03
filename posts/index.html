@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="grid x2">
 {% for post in paginator.posts %}
-<a class="clear grid-item" href="{{site.baseurl}}/{{post.url}}"><h3>{{post.title}}</h3></a>
+<a class="clear grid-item" href="{{site.baseurl}}{{post.url}}"><h3>{{post.title}}</h3></a>
 {% endfor %}
 
 </div>
